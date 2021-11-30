@@ -1,0 +1,404 @@
+:REVEAL_PROPERTIES:
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_REVEAL_JS_VERSION: 4
+#+REVEAL_EXTRA_CSS: ./css/blood.css
+#+REVEAL_EXTERNAL_PLUGINS: (spotlight "js/spotlight.js" "plugin/spotlight.js")
+#+REVEAL_EXTRA_SCRIPT_SRC: ./js/caption.js
+#+REVEAL_PLUGINS: (highlight)
+#+REVEAL_HIGHLIGHT_CSS: https://cdn.jsdelivr.net/npm/reveal.js@4.2.0/plugin/highlight/monokai.css
+#+OPTIONS: reveal_global_footer:t
+#+OPTIONS: timestamp:nil toc:2 num:nil
+:END:
+
+# #+REVEAL_EXTERNAL_PLUGINS: (spotlight . "js/spotlight.js") (spotconf
+# . "plugin/spotlight.js")
+
+# #+startup: latexpreview
+# #+startup: imagepreview
+
+#+title: Produção Enxuta 
+#+EMAIL: pedro.branquinho@usp.br
+#+AUTHOR: Pedro G. Branquinho
+# #+DATE: Universidade de São Paulo - DEMAR
+
+* *Historicamente*
+** 🚋The Toyota Way
+_Produção Enxuta_, também conhecida como _Lean_ ou _JIT_ [Just In Time],
+
+#+begin_quote
+(...) é o método de produção objetivado a primariamente reduzir o
+tempo de produção em cada etapa do sistema de produção, bem como os
+tempos de repostas entre clientes e fornecedores.
+#+end_quote
+[[https://wikiless.org/wiki/Lean_manufacturing?lang=en][Wikipedia]]
+
+**** COMMENT quote
+#+begin_quote
+(...) is a production method aimed primarily at reducing times within
+the production system as well as response times from suppliers and to
+customers.
+#+end_quote
+James Womack e Daniel Jones, 1996
+
+*** Enxuto (Lean)
+O termo =Lean= foi cunhado, em *1988*, por *John Krafcik*, e definido,
+em *1996*, por *James Womack* e *Daniel Jones*.
+
+#+ATTR_REVEAL: :frag (grow)
+#+begin_quote
+Especificar os valores de um produto precisamente, identificar as vias
+de produção de cada valor, produzir valor continuamente sem
+interrupção, produção por demanda direta, e procurar a perfeição. 
+#+end_quote
+_James Womack e Daniel Jones, 1996_
+
+**** COMMENT quote
+#+begin_quote
+"Precisely specify value by specific product, identify the
+value stream for each product, make value flow without interruptions,
+let customer pull value from the producer, and pursue perfection."
+#+end_quote
+
+*** Exemplos visuais
+#+ATTR_REVEAL: :frag (grow)
+#+CAPTION: Linha de produção enxuta.
+#+ATTR_HTML: :width 48% :align left
+[[file:img/NCR-manufacturing-plant-near-Budapest.jpg][file:~/PP/FAP/apresentacao/img/NCR-manufacturing-plant-near-Budapest.jpg]]
+
+#+ATTR_REVEAL: :frag (grow)
+#+CAPTION:  Linha de produção enxuta teórica.
+#+ATTR_HTML: :width 48% :align right
+[[file:img/lean1.jpg][file:~/PP/FAP/apresentacao/img/lean1.jpg]]
+** ⏲ Quando? (Durante e pós segunda guerra)
+*** Hirohito (Showa) (1901-1989)
+#+ATTR_HTML: :height 70% :align center
+[[file:img/Emperor_Showa_in_dress.jpg][file:~/PP/FAP/apresentacao/img/Emperor_Showa_in_dress.jpg]]
+
+*** Hitler
+
+#+CAPTION:*Why we fight? I*
+#+ATTR_HTML: :width 80% :align center
+[[file:img/Emperor_Showa_in_dress.jpg][file:~/PP/FAP/apresentacao/img/hitler1.png]]
+
+*** Mussolini
+#+ATTR_HTML: :width 80% :align center
+[[file:img/mussolini.jpg][file:~/PP/FAP/apresentacao/img/mussolini.jpg]]
+
+*** GM
+#+ATTR_HTML: :width 65% :align center
+[[file:img/GM.jpg][file:~/PP/FAP/apresentacao/img/GM.jpg]]
+
+*** Henry Ford (1938)
+#+ATTR_HTML: :width 50% :align center
+[[file:img/GM.jpg][file:~/PP/FAP/apresentacao/img/ford.png]]
+
+https://rarehistoricalphotos.com/henry-ford-grand-cross-1938/
+
+*** Pós-guerra (Plano Marshall)
+#+ATTR_HTML: :width 100% :align center
+[[file:img/italy.png][file:~/PP/FAP/apresentacao/img/italy.png]]
+
+*** Guerra na frente Chinesa (BANZAI!)
+#+ATTR_REVEAL: :frag (highlight-current-blue)
+- Após perder a segunda guerra, ao lado da Alemanhã.
+- Países subjugados.
+- A Industrialização não era focada em
+  + *optimização*,
+  + *reutilização*,
+  + *eficiência*.
+  
+** ❔ Por que?
+#+begin_quote
+"Bearst blindly, and you will attain your rightfully place on the
+World. All the peoples will be your slaves."
+#+end_quote
+
+#+ATTR_REVEAL: :frag (highlight-current-blue)
+- Não havia outros países subjugados pra pagar as contas.
+- Optimização dos processos de produção, ou falência econômica.
+- Já existia um modelo _Fordista_, mas haviam defeitos.
+
+* Os cinco princípios
+** Valor para o cliente
+- O primeiro passo para se tornar "Lean".
+- Produto específico.  
+- Quais =necessidades= os clientes procuram sanar.
+- Preço específico.
+- Momento específico.
+*** O que é valor?
+#+begin_quote
+O valor é tudo aquilo que os clientes consideram
+importantes em um produto e é o ponto motivador que faz o consumidor
+adquirir certo produto de uma determinada empresa.
+#+end_quote
+
+- Conceito subjetivo atrelado ao cliente.
+*** Onde se encontra o valor?
+#+ATTR_REVEAL: :frag (highlight-current-green)
+- Cor;
+- Forma;
+- Tamanho;
+- Tecnologia agregada;
+- Funcionalidade;
+- Embalagem;
+- Marca;
+- Preço final.
+** Mapeamento do fluxo de valor.
+*** Ciclo de vida completo
+#+ATTR_REVEAL: :frag (highlight-current-red)
+- Design;
+- Uso pelo cliente;
+- Descarte;
+- Reciclagem.
+*** Fundamento
+#+ATTR_REVEAL: :frag (highlight-current-red)
+- Quais etapas são =necessárias= para a produção.
+- Quais etapas podem ser =minificadas ou descartadas=.
+*** Ferramenta
+- VSM (Value Stream Mapping).
+*** Análise do Fluxo de Valor
+- É possível diferenciar as ações que ocorrem ao longo do processo.
+- Etapas que *agregam valor*.
+- Etapas que *não agregam valor*.
+* Produção continua
+** Tem como princípios
+#+ATTR_REVEAL: :frag (highlight-current-red)
+- A eliminação de tempos de espera entre as etapas de construção do produto;
+- A eliminação de tempos de transporte de peças/produtos entre as
+  etapas;
+
+** 📈 Representação
+#+CAPTION: Ilha isolada vs. Fluxo contínuo
+#+ATTR_HTML: :width 100% :align center
+[[file:img/pic-selected-211129-2259-08.png][file:~/PP/FAP/apresentacao/img/pic-selected-211129-2259-08.png]]
+
+** ⬇💲 Custos
+#+ATTR_REVEAL: :frag (highlight-current-green)
+- Os custos de produção no fluxo contínuo são otimizados;
+- É gasto apenas o necessário para cada demanda.
+
+** ♺ Controle de insumos
+#+ATTR_REVEAL: :frag (highlight-current-green)
+- O controle sobre os insumos é maior;
+- Aferições de qualidade mais rigorosas;
+- Evita desperdícios.
+
+** Sistemas puxados 👷🏽
+#+CAPTION: Ilha isolada vs. Fluxo contínuo
+#+ATTR_HTML: :width 50% :align center
+[[file:img/cont1.jpg][file:~/PP/FAP/apresentacao/img/cont1.jpg]]
+
+*** Tipo A
+#+ATTR_REVEAL: :frag (highlight-current-blue)
+- Exigem reabastecimento ou preenchimento das lacunas à retirada.
+- Atualização e controle por *Kanban*
+- Volume de produtos finais depende do ritmo de produção e retirada;
+- Retirada de produtos frequente e o lead time e curto e estável.
+- Ex: Industria de _peça de automotivas_ e uma indústria de
+  _eletrodomésticos_.
+
+*** Representação
+#+ATTR_HTML: :width 100% :align center
+[[file:img/c2.png][file:~/PP/FAP/apresentacao/img/c2.png]]
+
+*** Tipo B
+#+ATTR_REVEAL: :frag (highlight-current-blue)
++ *Frequência* de pedidos é *baixa* e o *lead* time é *longo*;
++ O trabalho é feito de forma *sequencial*, através da rotas FIFO(first in, first out);
++ Os cartões =kanban= fornecem a sequenciamento;
++ Controle FIFO à cada etapa;
++ Armazém específico por tamanho e custo;
++ Ex: Produtores de _customizados_ e _projetos_.
+
+*** Imagem mental
+#+ATTR_HTML: :width 100% :align center
+[[file:img/sua-ideia.png][file:~/PP/FAP/apresentacao/img/sua-ideia.png]]
+
+*** Tipo C
+#+ATTR_REVEAL: :frag (highlight-current-blue)
+- É a *combinação* do tipo *A* e *B* em paralelo;
+- *Alta frequência* são feitos pelo tipo *A*;
+- *Baixa frequência* são feitos pelo tipo *B*;
+- As exigências de cada sistema puxado também se aplicam no tipo C;
+  
+*** Exemplo
+#+ATTR_HTML: :width 100% :align center
+[[file:img/cafe.png][file:~/PP/FAP/apresentacao/img/cafe.png]]
+
+* Produção à partir de necessidade
+
+* Melhoria contínua
+#+ATTR_REVEAL: :frag (grow)
+#+CAPTION: Fonte: Adobe Stock.
+#+ATTR_HTML: :width 25% :align center
+[[file:Partes/melhora-continua/img/img1.png][file:./Partes/melhora-continua/img/img1.png]]
+
+#+begin_quote
+Tornar-se uma organização de aprendizagem pela busca da padronização,
+da reflexão incansável e pela melhoria contínua (Kaizen).
+#+end_quote
+** Trabalho Padronizado x Padrão De Trabalho
+*** =Trabalho Padronizado=
+#+ATTR_REVEAL: :frag (highlight-current-red)
+  - Depende da demanda
+  - Centrado na movimentação do trabalhador
+  - Tempo takt
+  - Sequência de Trabalho
+  - Estoque Padrão
+*** =Padrão de Trabalho=
+#+ATTR_REVEAL: :frag (highlight-current-blue)
+- Independe da demanda
+- Especificações técnicas do processo
+- Base para elaboração do T.P
+** Trabalho Padronizado
+#+ATTR_REVEAL: :frag (highlight-current-red)
+- Centrado no movimento e trabalho do operador
+- Aplicado em operações e processos repetitivos
+- Visa eliminar desperdícios
+- Referência para o Kaizen
+- _Modo mais seguro, fácil e eficaz atual._
+
+#+CAPTION: Chaplin em assembly fordista.
+#+ATTR_HTML: :width 38% :align center
+[[file:img/DIGI-jumbo.jpg][file:~/PP/FAP/apresentacao/img/DIGI-jumbo.jpg]]
+** Diagrama Equemático - Padronização
+#+CAPTION: Fonte: Curso Green Belt EEL.
+#+ATTR_HTML: :width 100% :align center
+[[file:img/padr3.png][file:~/PP/FAP/apresentacao/img/padr3.png]]
+** Camisa de Força?
+
+*** =“Trabalho convencional”=
+#+ATTR_REVEAL: :frag (highlight-current-red)
+- Existe somente uma melhor maneira.
+- Trabalhadores não envolvidos.
+- Padrões estáticos.
+
+*** =TPS - Toyota Production System=
+#+ATTR_REVEAL: :frag (highlight-current-blue)
+- Não há só uma melhor maneira
+- Trabalhadores devem planejar o trabalho
+- O objetivo do TP é fornecer bases para melhoria
+** *Síntese*
+#+begin_quote
+“O trabalho padronizado dá suporte à criatividade humana, contanto que
+o líder de equipe tenha o entendimento correto.
+
+O trabalho padronizado é um processo, não uma prisão! Nossa meta é a
+perfeição, um processo sem nenhum desperdício.
+
+O trabalho padronizado fornece a base e o envolvimento dos membros de
+equipe, dá o ímpeto para melhorias ilimitadas e infinitas.”
+(Pascal Dennis)
+#+end_quote
+** Benefícios
+- Estabilidade de processos;
+- Pontos de início e paradas claros para caad processo;
+- Aprendizagem organizacional;
+- A solução de auditorias e de problemas;
+- Envolvimento do funcionário;
+- Kaizen;
+- Treinamento;
+** As três bases
+*** O tempo _takt_
+#+ATTR_REVEAL: :frag (highlight-current-red)
+- O tempo takt nos fornece a frequência de demanda.
+- O tempo takt é diferente do tempo de ciclo (tempo real), nossa meta é sincronizá-los ao máximo.
+- O tempo takt nos permite entender nossa situação de produção com uma só olhada.
+*** Sequência de trabalho
+
+- Sequência de operação ≠ Sequência do processo
+
+#+CAPTION: Fonte: Curso Green Belt EEL.
+#+ATTR_HTML: :width 100% :align center
+[[file:img/freq.png][file:~/PP/FAP/apresentacao/img/freq.png]]
+*** Estoque em processo
+#+ATTR_REVEAL: :frag (highlight-current-red)
+- É a quantia mínima de peças de trabalho incompletas necessárias para
+  que o operador completo o processo sem ficar parado na frente de uma
+  máquina.
+- O trabalho não pode progredir sem certo números de peças a disposição.
+
+#+CAPTION: Fonte: Bernardo J. Antunes.
+#+ATTR_HTML: :width 100% :align center
+[[file:img/estoque.png][file:~/PP/FAP/apresentacao/img/estoque.png]]
+** 
+:PROPERTIES:
+:reveal_background: ./img/kaizen.png
+:reveal_background_opacity: 0.5
+:END:
+
+*** Definição
+:PROPERTIES:
+:reveal_background: ./img/kaizen2.jpg
+:reveal_background_opacity: 0.1
+:END:
+
+=Kai= = *mudar*;
+
+=Zen= = *coisas boas, melhor*;
+
+#+ATTR_REVEAL: :frag (highlight-current-red)
+1. Desenvolver as habilidades dos colaboradores. 
+2. Solucionar as reais causas de problemas.
+3. Focar nas melhorias ditadas pela necessidade.
+   
+*** ❌ 1º Eliminar desperdícios.
+
+ Tudo que consome recurso mas não cria valor.
+ 
+#+ATTR_REVEAL: :frag (highlight-current-red)
++ Produção em excesso
++ Movimentação
++ Espera
++ Transporte
++ Estoques
++ Processamento desnecessário
++ Correção e refugos
+*** 🗺 2º Melhorias ditadas pela necessidade
+
+- Fazer o =kaizen= onde é necessário.
+*** ☑ 3º Satisfação dos colaboradores
+#+ATTR_REVEAL: :frag (highlight-current-blue)
+- O trabalhador é sensível ao resultado obtido.
+- Facilita as atividades e aumenta a auto estima do colaborador.
+- Rapidez de implementação gera maior satisfação.
+*** 🧠 4º Obtenção de lucro para a empresa
+
+#+begin_quote
+“Use a cabeça, não o dinheiro”
+
+Taiichi Ohno
+#+end_quote
+
+O lucro deve ser obtido pela eliminação de desperdícios, não pelo simples corte de custos.
+*** 🙋 5º Satisfação dos Clientes
+#+ATTR_REVEAL: :frag (highlight-current-green)
+- O fracasso ou sucesso do *Kaizen* depende do julgamento do cliente.
+- Sem a _“demanda”_ de um cliente, não há necessidade da melhoria.
+*** Kaizen -- Síntese
+
+- A prioridade dos 4Ms da Toyota
+
+#+CAPTION: Fonte: Curso Green Belt EEL.
+#+ATTR_HTML: :width 100% :align center
+[[file:img/kaizen3.jpg][file:~/PP/FAP/apresentacao/img/kaizen3.jpg]]
+
+- Segurança do trabalhador em primeiro lugar
+** 
+:PROPERTIES:
+:reveal_background: ./img/kaizen4.jpg
+:reveal_background_opacity: 0.5
+:END:
+** Workshop e Semana Kaizen
+
+#+CAPTION: Fonte: Curso Green Belt EEL.
+#+ATTR_HTML: :width 100% :align center
+[[file:img/freq.png][file:~/PP/FAP/apresentacao/img/worshop.jpg]]
+** 
+:PROPERTIES:
+:reveal_background: ./img/kaizen5.jpg
+:reveal_background_opacity: 0.1
+:END:
+
+*A perfeição é um ciclo permanente de criação valor e de eliminação de desperdícios. 
+Uma busca sem fim...*
