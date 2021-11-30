@@ -17,8 +17,8 @@
 # #+startup: imagepreview
 
 #+title: Produção Enxuta 
-#+EMAIL: pedro.branquinho@usp.br
-#+AUTHOR: Pedro G. Branquinho
+# #+EMAIL: pedro.branquinho@usp.br
+# #+AUTHOR: Pedro G. Branquinho
 # #+DATE: Universidade de São Paulo - DEMAR
 
 * *Historicamente*
