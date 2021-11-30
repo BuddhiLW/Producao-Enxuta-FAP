@@ -459,3 +459,13 @@ li>b{
     font-size:0.6em;
     color: white;
 }
+
+.reveal blockquote{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.reveal .quote-background {
+    background-color: #23241f !important;
+    color: white;
+}

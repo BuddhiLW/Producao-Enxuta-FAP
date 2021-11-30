@@ -18,7 +18,7 @@
 
 #+title: Produção Enxuta 
 # #+EMAIL: pedro.branquinho@usp.br
-# #+AUTHOR: Pedro G. Branquinho
+#+AUTHOR: Pedro Branquinho, Rômulo Silva, Luca Alexandre, Bernardo Antunes
 # #+DATE: Universidade de São Paulo - DEMAR
 #+OPTIONS: toc:nil
 
@@ -78,10 +78,10 @@ let customer pull value from the producer, and pursue perfection."
 #+ATTR_HTML: :height 70% :left center
 [[file:img/Emperor_Showa_in_dress.jpg][file:~/PP/FAP/apresentacao/img/Emperor_Showa_in_dress.jpg]]
 *** Industrialização pronta (1931)
-#+ATTR_HTML: :width 50% :left
+#+ATTR_HTML: :width 80% :left
 [[file:img/machuria1.png][file:~/PP/FAP/apresentacao/img/machuria1.png]]
 *** Início da Guerra (1931)
-#+ATTR_HTML: :width 50% :right
+#+ATTR_HTML: :width 80% :right
 [[file:img/manchuria2.png][file:~/PP/FAP/apresentacao/img/manchuria2.png]]
 *** Hitler
 #+CAPTION:*Why we fight? I*
@@ -93,12 +93,12 @@ let customer pull value from the producer, and pursue perfection."
 [[file:img/GM.jpg][file:~/PP/FAP/apresentacao/img/GM.jpg]]
 
 *** Henry Ford (1938)
-#+ATTR_HTML: :width 50% :align center
+#+CAPTION: https://rarehistoricalphotos.com/henry-ford-grand-cross-1938/
+#+ATTR_HTML: :width 60% :align center
 [[file:img/GM.jpg][file:~/PP/FAP/apresentacao/img/ford.png]]
 
-https://rarehistoricalphotos.com/henry-ford-grand-cross-1938/
 
-** Pós-guerra (Plano Marshall)
+** Pós-guerra (1945-1970) 
 *** Mussolini
 #+ATTR_HTML: :width 80% :align center
 [[file:img/mussolini.jpg][file:~/PP/FAP/apresentacao/img/mussolini.jpg]]
@@ -115,6 +115,11 @@ https://rarehistoricalphotos.com/henry-ford-grand-cross-1938/
 [[file:img/italy.png][file:~/PP/FAP/apresentacao/img/italy.png]]
 
 ** Guerra na frente Chinesa (1931-1945)
+:PROPERTIES:
+:reveal_background: ./img/tanaka2.png
+:reveal_background_opacity: 0.2
+:END:
+
 #+begin_quote
 "In their (China's) 4000 years of continuous History, they have never waged a war
 of conquest."
@@ -139,12 +144,17 @@ Why We Fight: The Battle of China
 + *reutilização*,
 + *eficiência*.
 ** ❔ Por que?
+:PROPERTIES:
+:reveal_background: ./img/russia.png
+:reveal_background_opacity: 0.3
+:END:
+
 #+begin_quote
 "Bearst blindly, and you will attain your rightful place on the
 *World*. All the peoples will be your *slaves*."
 #+end_quote
 
-#+ATTR_REVEAL: :frag (highlight-current-green)
+#+ATTR_REVEAL: :frag (highlight-current-red)
 - Não havia outros países subjugados pra pagar as contas.
 - Optimização dos processos de produção, ou falência econômica.
 - Já existia um modelo _Fordista_, mas haviam defeitos de eficiência.
@@ -210,7 +220,6 @@ adquirir certo produto de uma determinada empresa.
 #+ATTR_REVEAL: :frag (highlight-current-green)
 - Os custos de produção no fluxo contínuo são otimizados;
 - É gasto apenas o necessário para cada demanda.
-
   
 * Produção à partir de necessidade
 ** ♺ Controle de insumos
@@ -440,3 +449,4 @@ Uma busca sem fim...*
 #+REVEAL_HTML: <iframe width="1000" height="600" src="https://www.youtube.com/embed/61XeVq-1xbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 * Breaking Quizz!
+
