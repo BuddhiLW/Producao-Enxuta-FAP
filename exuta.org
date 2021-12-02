@@ -64,55 +64,55 @@ let customer pull value from the producer, and pursue perfection."
 #+ATTR_REVEAL: :frag (grow)
 #+CAPTION: Linha de produção enxuta.
 #+ATTR_HTML: :width 48% :align left
-[[file:img/NCR-manufacturing-plant-near-Budapest.jpg][file:~/PP/FAP/apresentacao/img/NCR-manufacturing-plant-near-Budapest.jpg]]
+[[file:img/NCR-manufacturing-plant-near-Budapest.jpg][file:./img/NCR-manufacturing-plant-near-Budapest.jpg]]
 
 #+ATTR_REVEAL: :frag (grow)
 #+CAPTION:  Linha de produção enxuta teórica.
 #+ATTR_HTML: :width 48% :align right
-[[file:img/lean1.jpg][file:~/PP/FAP/apresentacao/img/lean1.jpg]]
+[[file:img/lean1.jpg][file:./img/lean1.jpg]]
 ** ⏲ Quando? (1948-1975)
 - Três anos após a segunda guerra.
 #+ATTR_HTML: :width 100% :left center
-[[file:img/os-tres.png][file:~/PP/FAP/apresentacao/img/os-tres.png]]
+[[file:img/os-tres.png][file:./img/os-tres.png]]
 *** Hirohito (Showa) (1901-1989)
 #+ATTR_HTML: :height 70% :left center
-[[file:img/Emperor_Showa_in_dress.jpg][file:~/PP/FAP/apresentacao/img/Emperor_Showa_in_dress.jpg]]
+[[file:img/Emperor_Showa_in_dress.jpg][file:./img/Emperor_Showa_in_dress.jpg]]
 *** Industrialização pronta (1931)
 #+ATTR_HTML: :width 80% :left
-[[file:img/machuria1.png][file:~/PP/FAP/apresentacao/img/machuria1.png]]
+[[file:img/machuria1.png][file:./img/machuria1.png]]
 *** Início da Guerra (1931)
 #+ATTR_HTML: :width 80% :right
-[[file:img/manchuria2.png][file:~/PP/FAP/apresentacao/img/manchuria2.png]]
+[[file:img/manchuria2.png][file:./img/manchuria2.png]]
 *** Hitler
 #+CAPTION:*Why we fight? I*
 #+ATTR_HTML: :width 80% :align center
-[[file:img/Emperor_Showa_in_dress.jpg][file:~/PP/FAP/apresentacao/img/hitler1.png]]
+[[file:img/Emperor_Showa_in_dress.jpg][file:./img/hitler1.png]]
 
 *** GM- Luftwaffe (1931-1945)
 #+ATTR_HTML: :width 65% :align center
-[[file:img/GM.jpg][file:~/PP/FAP/apresentacao/img/GM.jpg]]
+[[file:img/GM.jpg][file:./img/GM.jpg]]
 
 *** Henry Ford (1938)
 #+CAPTION: https://rarehistoricalphotos.com/henry-ford-grand-cross-1938/
 #+ATTR_HTML: :width 60% :align center
-[[file:img/GM.jpg][file:~/PP/FAP/apresentacao/img/ford.png]]
+[[file:img/GM.jpg][file:./img/ford.png]]
 
 
 ** Pós-guerra (1945-1970) 
 *** Mussolini
 #+ATTR_HTML: :width 80% :align center
-[[file:img/mussolini.jpg][file:~/PP/FAP/apresentacao/img/mussolini.jpg]]
+[[file:img/mussolini.jpg][file:./img/mussolini.jpg]]
 
 *** Injeção monetária sustentou a Italia
 - Oitava maior economia do mundo.
 #+CAPTION: https://www.britannica.com/place/Italy/Economy
 #+ATTR_HTML: :width 100% :align center
-[[file:img/economia-italiana.png][file:~/PP/FAP/apresentacao/img/economia-italiana.png]]
+[[file:img/economia-italiana.png][file:./img/economia-italiana.png]]
 
 *** "Milagre econômico" Italiano
 #+CAPTION: https://en.wikipedia.org/wiki/Economy_of_Italy
 #+ATTR_HTML: :width 100% :align center
-[[file:img/italy.png][file:~/PP/FAP/apresentacao/img/italy.png]]
+[[file:img/italy.png][file:./img/italy.png]]
 
 ** Guerra na frente Chinesa (1931-1945)
 :PROPERTIES:
@@ -214,7 +214,7 @@ adquirir certo produto de uma determinada empresa.
 ** 📈 Representação
 #+CAPTION: Ilha isolada vs. Fluxo contínuo
 #+ATTR_HTML: :width 100% :align center
-[[file:img/pic-selected-211129-2259-08.png][file:~/PP/FAP/apresentacao/img/pic-selected-211129-2259-08.png]]
+[[file:img/pic-selected-211129-2259-08.png][file:./img/pic-selected-211129-2259-08.png]]
 
 ** ⬇💲 Custos
 #+ATTR_REVEAL: :frag (highlight-current-green)
@@ -231,7 +231,7 @@ adquirir certo produto de uma determinada empresa.
 ** Sistemas puxados 👷🏽
 #+CAPTION: Ilha isolada vs. Fluxo contínuo
 #+ATTR_HTML: :width 50% :align center
-[[file:img/cont1.jpg][file:~/PP/FAP/apresentacao/img/cont1.jpg]]
+[[file:img/cont1.jpg][file:./img/cont1.jpg]]
 
 *** Tipo A
 #+ATTR_REVEAL: :frag (highlight-current-blue)
@@ -244,7 +244,7 @@ adquirir certo produto de uma determinada empresa.
 
 *** Representação
 #+ATTR_HTML: :width 100% :align center
-[[file:img/c2.png][file:~/PP/FAP/apresentacao/img/c2.png]]
+[[file:img/c2.png][file:./img/c2.png]]
 
 *** Tipo B
 #+ATTR_REVEAL: :frag (highlight-current-blue)
@@ -257,7 +257,7 @@ adquirir certo produto de uma determinada empresa.
 
 *** Imagem mental
 #+ATTR_HTML: :width 100% :align center
-[[file:img/sua-ideia.png][file:~/PP/FAP/apresentacao/img/sua-ideia.png]]
+[[file:img/sua-ideia.png][file:./img/sua-ideia.png]]
 
 *** Tipo C
 #+ATTR_REVEAL: :frag (highlight-current-blue)
@@ -268,7 +268,7 @@ adquirir certo produto de uma determinada empresa.
   
 *** Exemplo
 #+ATTR_HTML: :width 100% :align center
-[[file:img/cafe.png][file:~/PP/FAP/apresentacao/img/cafe.png]]
+[[file:img/cafe.png][file:./img/cafe.png]]
 
 * Melhoria contínua
 #+ATTR_REVEAL: :frag (grow)
@@ -303,11 +303,11 @@ da reflexão incansável e pela melhoria contínua (Kaizen).
 
 #+CAPTION: Chaplin em assembly fordista.
 #+ATTR_HTML: :width 38% :align center
-[[file:img/DIGI-jumbo.jpg][file:~/PP/FAP/apresentacao/img/DIGI-jumbo.jpg]]
+[[file:img/DIGI-jumbo.jpg][file:./img/DIGI-jumbo.jpg]]
 ** Diagrama Equemático - Padronização
 #+CAPTION: Fonte: Curso Green Belt EEL.
 #+ATTR_HTML: :width 100% :align center
-[[file:img/padr3.png][file:~/PP/FAP/apresentacao/img/padr3.png]]
+[[file:img/padr3.png][file:./img/padr3.png]]
 ** Camisa de Força?
 
 *** =“Trabalho convencional”=
@@ -353,7 +353,7 @@ equipe, dá o ímpeto para melhorias ilimitadas e infinitas.”
 
 #+CAPTION: Fonte: Curso Green Belt EEL.
 #+ATTR_HTML: :width 100% :align center
-[[file:img/freq.png][file:~/PP/FAP/apresentacao/img/freq.png]]
+[[file:img/freq.png][file:./img/freq.png]]
 *** Estoque em processo
 #+ATTR_REVEAL: :frag (highlight-current-red)
 - É a quantia mínima de peças de trabalho incompletas necessárias para
@@ -363,7 +363,7 @@ equipe, dá o ímpeto para melhorias ilimitadas e infinitas.”
 
 #+CAPTION: Fonte: Bernardo J. Antunes.
 #+ATTR_HTML: :width 100% :align center
-[[file:img/estoque.png][file:~/PP/FAP/apresentacao/img/estoque.png]]
+[[file:img/estoque.png][file:./img/estoque.png]]
 ** 
 :PROPERTIES:
 :reveal_background: ./img/kaizen.png
@@ -424,7 +424,7 @@ O lucro deve ser obtido pela eliminação de desperdícios, não pelo simples co
 
 #+CAPTION: Fonte: Curso Green Belt EEL.
 #+ATTR_HTML: :width 100% :align center
-[[file:img/kaizen3.jpg][file:~/PP/FAP/apresentacao/img/kaizen3.jpg]]
+[[file:img/kaizen3.jpg][file:./img/kaizen3.jpg]]
 
 - Segurança do trabalhador em primeiro lugar
 ** 
@@ -436,7 +436,7 @@ O lucro deve ser obtido pela eliminação de desperdícios, não pelo simples co
 
 #+CAPTION: Fonte: Curso Green Belt EEL.
 #+ATTR_HTML: :width 100% :align center
-[[file:img/freq.png][file:~/PP/FAP/apresentacao/img/worshop.jpg]]
+[[file:img/freq.png][file:./img/worshop.jpg]]
 ** 
 :PROPERTIES:
 :reveal_background: ./img/kaizen5.jpg

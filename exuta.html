@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Produção Enxuta</title>
+<meta name="author" content="(Pedro Branquinho, Rômulo Silva, Luca Alexandre, Bernardo Antunes)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="./css/blood.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.2.0/plugin/highlight/monokai.css"/></head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Produção Enxuta</h1><h2 class="author">Pedro Branquinho, Rômulo Silva, Luca Alexandre, Bernardo Antunes</h2>
+</section>
+
+
+<section>
+<section id="slide-org97d8943">
+<h2 id="org97d8943"><b>Historicamente</b></h2>
+<div class="outline-text-2" id="text-org97d8943">
+</div>
+</section>
+<section id="slide-org58ef0e6">
+<h3 id="org58ef0e6">🚋The Toyota Way</h3>
+<p>
+<span class="underline">Produção Enxuta</span>, também conhecida como <span class="underline">Lean</span> ou <span class="underline">JIT</span> [Just In Time],
+</p>
+
+<blockquote >
+<p>
+(&#x2026;) é o método de produção objetivado a primariamente reduzir o
+tempo de produção em cada etapa do sistema de produção, bem como os
+tempos de repostas entre clientes e fornecedores.
+</p>
+</blockquote>
+<p>
+<a href="https://wikiless.org/wiki/Lean_manufacturing?lang=en">Wikipedia</a>
+</p>
+
+</section>
+<section id="slide-org86fa2d9">
+<h4 id="org86fa2d9">Enxuto (Lean)</h4>
+<p>
+O termo <code>Lean</code> foi cunhado, em <b>1988</b>, por <b>John Krafcik</b>, e definido,
+em <b>1996</b>, por <b>James Womack</b> e <b>Daniel Jones</b>.
+</p>
+
+<blockquote  class="fragment (grow)">
+<p>
+Especificar os valores de um produto precisamente, identificar as vias
+de produção de cada valor, produzir valor continuamente sem
+interrupção, produção por demanda direta, e procurar a perfeição. 
+</p>
+</blockquote>
+<p>
+<span class="underline">James Womack e Daniel Jones, 1996</span>
+</p>
+
+</section>
+<section id="slide-org5ef8ec2">
+<h4 id="org5ef8ec2">Exemplos visuais</h4>
+
+<div id="org7d52e67" class="figure">
+<p><a href="img/NCR-manufacturing-plant-near-Budapest.jpg" class="fragment (grow)" width="48%" align="left"><img src="./img/NCR-manufacturing-plant-near-Budapest.jpg" alt="NCR-manufacturing-plant-near-Budapest.jpg" class="fragment (grow)" width="48%" align="left" /></a>
+</p>
+<p><span class="figure-number">Figure 1: </span>Linha de produção enxuta.</p>
+</div>
+
+
+<div id="orgdf28d51" class="figure">
+<p><a href="img/lean1.jpg" class="fragment (grow)" width="48%" align="right"><img src="./img/lean1.jpg" alt="lean1.jpg" class="fragment (grow)" width="48%" align="right" /></a>
+</p>
+<p><span class="figure-number">Figure 2: </span>Linha de produção enxuta teórica.</p>
+</div>
+</section>
+<section id="slide-orgdc46a13">
+<h3 id="orgdc46a13">⏲ Quando? (1948-1975)</h3>
+<ul>
+<li>Três anos após a segunda guerra.</li>
+
+</ul>
+
+<div id="org6909b52" class="figure">
+<p><a href="img/os-tres.png" width="100%" left="center"><img src="./img/os-tres.png" alt="os-tres.png" width="100%" left="center" /></a>
+</p>
+</div>
+</section>
+<section id="slide-orgf2fecea">
+<h4 id="orgf2fecea">Hirohito (Showa) (1901-1989)</h4>
+
+<div id="orga65eae1" class="figure">
+<p><a href="img/Emperor_Showa_in_dress.jpg" height="70%" left="center"><img src="./img/Emperor_Showa_in_dress.jpg" alt="Emperor_Showa_in_dress.jpg" height="70%" left="center" /></a>
+</p>
+</div>
+</section>
+<section id="slide-orgb01d906">
+<h4 id="orgb01d906">Industrialização pronta (1931)</h4>
+
+<div id="org1548697" class="figure">
+<p><a href="img/machuria1.png" width="80%"><img src="./img/machuria1.png" alt="machuria1.png" width="80%" /></a>
+</p>
+</div>
+</section>
+<section id="slide-org19b21ba">
+<h4 id="org19b21ba">Início da Guerra (1931)</h4>
+
+<div id="orga590bbe" class="figure">
+<p><a href="img/manchuria2.png" width="80%"><img src="./img/manchuria2.png" alt="manchuria2.png" width="80%" /></a>
+</p>
+</div>
+</section>
+<section id="slide-orgf8a0b9b">
+<h4 id="orgf8a0b9b">Hitler</h4>
+
+<div id="orgfefe6ff" class="figure">
+<p><a href="img/Emperor_Showa_in_dress.jpg" width="80%" align="center"><img src="./img/hitler1.png" alt="hitler1.png" width="80%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 7: </span><b>Why we fight? I</b></p>
+</div>
+
+</section>
+<section id="slide-org6faf0ff">
+<h4 id="org6faf0ff">GM- Luftwaffe (1931-1945)</h4>
+
+<div id="orgc2597f7" class="figure">
+<p><a href="img/GM.jpg" width="65%" align="center"><img src="./img/GM.jpg" alt="GM.jpg" width="65%" align="center" /></a>
+</p>
+</div>
+
+</section>
+<section id="slide-org0f308d4">
+<h4 id="org0f308d4">Henry Ford (1938)</h4>
+
+<div id="orgdd1dc44" class="figure">
+<p><a href="img/GM.jpg" width="60%" align="center"><img src="./img/ford.png" alt="ford.png" width="60%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 9: </span><a href="https://rarehistoricalphotos.com/henry-ford-grand-cross-1938/">https://rarehistoricalphotos.com/henry-ford-grand-cross-1938/</a></p>
+</div>
+
+
+</section>
+<section id="slide-org8b0cc77">
+<h3 id="org8b0cc77">Pós-guerra (1945-1970)</h3>
+<div class="outline-text-3" id="text-org8b0cc77">
+</div>
+</section>
+<section id="slide-orgc469fb3">
+<h4 id="orgc469fb3">Mussolini</h4>
+
+<div id="org96f4d48" class="figure">
+<p><a href="img/mussolini.jpg" width="80%" align="center"><img src="./img/mussolini.jpg" alt="mussolini.jpg" width="80%" align="center" /></a>
+</p>
+</div>
+
+</section>
+<section id="slide-org8f58a14">
+<h4 id="org8f58a14">Injeção monetária sustentou a Italia</h4>
+<ul>
+<li>Oitava maior economia do mundo.</li>
+
+</ul>
+
+<div id="org066a990" class="figure">
+<p><a href="img/economia-italiana.png" width="100%" align="center"><img src="./img/economia-italiana.png" alt="economia-italiana.png" width="100%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 11: </span><a href="https://www.britannica.com/place/Italy/Economy">https://www.britannica.com/place/Italy/Economy</a></p>
+</div>
+
+</section>
+<section id="slide-org775c5a7">
+<h4 id="org775c5a7">"Milagre econômico" Italiano</h4>
+
+<div id="orge068f21" class="figure">
+<p><a href="img/italy.png" width="100%" align="center"><img src="./img/italy.png" alt="italy.png" width="100%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 12: </span><a href="https://en.wikipedia.org/wiki/Economy_of_Italy">https://en.wikipedia.org/wiki/Economy_of_Italy</a></p>
+</div>
+
+</section>
+<section id="slide-org8567aa5" data-background="./img/tanaka2.png" data-background-opacity="0.2">
+<h3 id="org8567aa5">Guerra na frente Chinesa (1931-1945)</h3>
+<blockquote >
+<p>
+"In their (China's) 4000 years of continuous History, they have never waged a war
+of conquest."
+</p>
+
+<p>
+Why We Fight: The Battle of China
+</p>
+</blockquote>
+
+<ul>
+<li class="fragment highlight-current-red">Após perder a segunda guerra, com Alemanhã.</li>
+<li class="fragment appear">Esperava-se ter os recursos da Manchúria.</li>
+<li class="fragment appear">Operavam no presuposto de recursos abundantes.</li>
+
+</ul>
+
+</section>
+<section id="slide-org5109e2c" data-background="./img/tanaka.png" data-background-opacity="0.3">
+<h3 id="org5109e2c">O resultado</h3>
+<p>
+<code>A Industrialização Japonesa não era focada em</code>
+</p>
+<ul>
+<li class="fragment appear"><b>optimização</b>,</li>
+<li class="fragment appear"><b>reutilização</b>,</li>
+<li class="fragment appear"><b>eficiência</b>.</li>
+
+</ul>
+</section>
+<section id="slide-orgb332b70" data-background="./img/russia.png" data-background-opacity="0.3">
+<h3 id="orgb332b70">❔ Por que?</h3>
+<blockquote >
+<p>
+"Bearst blindly, and you will attain your rightful place on the
+<b>World</b>. All the peoples will be your <b>slaves</b>."
+</p>
+</blockquote>
+
+<ul>
+<li class="fragment highlight-current-red">Não havia outros países subjugados pra pagar as contas.</li>
+<li class="fragment highlight-current-red">Optimização dos processos de produção, ou falência econômica.</li>
+<li class="fragment highlight-current-red">Já existia um modelo <span class="underline">Fordista</span>, mas haviam defeitos de eficiência.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb4f360c">
+<h2 id="orgb4f360c">Os cinco princípios</h2>
+</section>
+</section>
+<section>
+<section id="slide-org9be5676">
+<h2 id="org9be5676">Valor para o cliente</h2>
+<ul>
+<li class="fragment appear">O primeiro passo para se tornar "Lean".</li>
+<li class="fragment appear">Produto específico.</li>
+<li class="fragment appear">Quais <code>necessidades</code> os clientes procuram sanar.</li>
+<li class="fragment appear">Preço específico.</li>
+<li class="fragment appear">Momento específico.</li>
+
+</ul>
+</section>
+<section id="slide-orgbe0fd80">
+<h3 id="orgbe0fd80">O que é valor?</h3>
+<blockquote >
+<p>
+O valor é tudo aquilo que os clientes consideram
+importantes em um produto, e é o ponto motivador que faz o consumidor
+adquirir certo produto de uma determinada empresa.
+</p>
+</blockquote>
+
+<ul>
+<li class="fragment appear">Conceito subjetivo atrelado ao cliente.</li>
+
+</ul>
+</section>
+<section id="slide-orga1d70c9">
+<h3 id="orga1d70c9">Onde se encontra o valor?</h3>
+<ul>
+<li class="fragment highlight-current-green">Cor;</li>
+<li class="fragment highlight-current-green">Forma;</li>
+<li class="fragment highlight-current-green">Tamanho;</li>
+<li class="fragment highlight-current-green">Tecnologia agregada;</li>
+<li class="fragment highlight-current-green">Funcionalidade;</li>
+<li class="fragment highlight-current-green">Embalagem;</li>
+<li class="fragment highlight-current-green">Marca;</li>
+<li class="fragment highlight-current-green">Preço final.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org3a377db">
+<h2 id="org3a377db">Mapeamento do fluxo de valor.</h2>
+<div class="outline-text-2" id="text-org3a377db">
+</div>
+</section>
+<section id="slide-orgf27ffb8">
+<h3 id="orgf27ffb8">Ciclo de vida completo</h3>
+<ul>
+<li class="fragment highlight-current-red">Design;</li>
+<li class="fragment highlight-current-red">Uso pelo cliente;</li>
+<li class="fragment highlight-current-red">Descarte;</li>
+<li class="fragment highlight-current-red">Reciclagem.</li>
+
+</ul>
+</section>
+<section id="slide-orgd1db690">
+<h3 id="orgd1db690">Fundamento</h3>
+<ul>
+<li class="fragment highlight-current-red">Quais etapas são <code>necessárias</code> para a produção.</li>
+<li class="fragment highlight-current-red">Quais etapas podem ser <code>minificadas ou descartadas</code>.</li>
+
+</ul>
+</section>
+<section id="slide-org470290c">
+<h3 id="org470290c">Ferramenta</h3>
+<ul>
+<li>VSM (Value Stream Mapping).</li>
+
+</ul>
+</section>
+<section id="slide-org3832a35">
+<h3 id="org3832a35">Análise do Fluxo de Valor</h3>
+<ul>
+<li class="fragment appear">É possível diferenciar as ações que ocorrem ao longo do processo.</li>
+<li class="fragment appear">Etapas que <b>agregam valor</b>.</li>
+<li class="fragment appear">Etapas que <b>não agregam valor</b>.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgfb390fe">
+<h2 id="orgfb390fe">Produção continua</h2>
+<div class="outline-text-2" id="text-orgfb390fe">
+</div>
+</section>
+<section id="slide-org2c6ae81">
+<h3 id="org2c6ae81">Tem como princípios</h3>
+<ul>
+<li class="fragment highlight-current-red">A eliminação de tempos de espera entre as etapas de construção do produto;</li>
+<li class="fragment highlight-current-red">A eliminação de tempos de transporte de peças/produtos entre as
+etapas;</li>
+
+</ul>
+
+</section>
+<section id="slide-org6cfe053">
+<h3 id="org6cfe053">📈 Representação</h3>
+
+<div id="org4988935" class="figure">
+<p><a href="img/pic-selected-211129-2259-08.png" width="100%" align="center"><img src="./img/pic-selected-211129-2259-08.png" alt="pic-selected-211129-2259-08.png" width="100%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 13: </span>Ilha isolada vs. Fluxo contínuo</p>
+</div>
+
+</section>
+<section id="slide-org5775400">
+<h3 id="org5775400">⬇💲 Custos</h3>
+<ul>
+<li class="fragment highlight-current-green">Os custos de produção no fluxo contínuo são otimizados;</li>
+<li class="fragment highlight-current-green">É gasto apenas o necessário para cada demanda.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org2922ccf">
+<h2 id="org2922ccf">Produção à partir de necessidade</h2>
+<div class="outline-text-2" id="text-org2922ccf">
+</div>
+</section>
+<section id="slide-orgbf82a2d">
+<h3 id="orgbf82a2d">♺ Controle de insumos</h3>
+<ul>
+<li class="fragment highlight-current-green">O controle sobre os insumos é maior;</li>
+<li class="fragment highlight-current-green">Aferições de qualidade mais rigorosas;</li>
+<li class="fragment highlight-current-green">Evita desperdícios.</li>
+
+</ul>
+
+</section>
+<section id="slide-org399ac03">
+<h3 id="org399ac03">Sistemas puxados 👷🏽</h3>
+
+<div id="orgf2a90d6" class="figure">
+<p><a href="img/cont1.jpg" width="50%" align="center"><img src="./img/cont1.jpg" alt="cont1.jpg" width="50%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 14: </span>Ilha isolada vs. Fluxo contínuo</p>
+</div>
+
+</section>
+<section id="slide-orgba4f28b">
+<h4 id="orgba4f28b">Tipo A</h4>
+<ul>
+<li class="fragment highlight-current-blue">Exigem reabastecimento ou preenchimento das lacunas à retirada.</li>
+<li class="fragment highlight-current-blue">Atualização e controle por <b>Kanban</b></li>
+<li class="fragment highlight-current-blue">Volume de produtos finais depende do ritmo de produção e retirada;</li>
+<li class="fragment highlight-current-blue">Retirada de produtos frequente e o lead time e curto e estável.</li>
+<li class="fragment highlight-current-blue">Ex: Industria de <span class="underline">peça de automotivas</span> e uma indústria de
+<span class="underline">eletrodomésticos</span>.</li>
+
+</ul>
+
+</section>
+<section id="slide-orgd1adc0e">
+<h4 id="orgd1adc0e">Representação</h4>
+
+<div id="org0e7b6ef" class="figure">
+<p><a href="img/c2.png" width="100%" align="center"><img src="./img/c2.png" alt="c2.png" width="100%" align="center" /></a>
+</p>
+</div>
+
+</section>
+<section id="slide-org9259a3d">
+<h4 id="org9259a3d">Tipo B</h4>
+<ul>
+<li class="fragment highlight-current-blue"><b>Frequência</b> de pedidos é <b>baixa</b> e o <b>lead</b> time é <b>longo</b>;</li>
+<li class="fragment highlight-current-blue">O trabalho é feito de forma <b>sequencial</b>, através da rotas FIFO(first in, first out);</li>
+<li class="fragment highlight-current-blue">Os cartões <code>kanban</code> fornecem a sequenciamento;</li>
+<li class="fragment highlight-current-blue">Controle FIFO à cada etapa;</li>
+<li class="fragment highlight-current-blue">Armazém específico por tamanho e custo;</li>
+<li class="fragment highlight-current-blue">Ex: Produtores de <span class="underline">customizados</span> e <span class="underline">projetos</span>.</li>
+
+</ul>
+
+</section>
+<section id="slide-orgf1380e3">
+<h4 id="orgf1380e3">Imagem mental</h4>
+
+<div id="org9ea4955" class="figure">
+<p><a href="img/sua-ideia.png" width="100%" align="center"><img src="./img/sua-ideia.png" alt="sua-ideia.png" width="100%" align="center" /></a>
+</p>
+</div>
+
+</section>
+<section id="slide-org3c6834b">
+<h4 id="org3c6834b">Tipo C</h4>
+<ul>
+<li class="fragment highlight-current-blue">É a <b>combinação</b> do tipo <b>A</b> e <b>B</b> em paralelo;</li>
+<li class="fragment highlight-current-blue"><b>Alta frequência</b> são feitos pelo tipo <b>A</b>;</li>
+<li class="fragment highlight-current-blue"><b>Baixa frequência</b> são feitos pelo tipo <b>B</b>;</li>
+<li class="fragment highlight-current-blue">As exigências de cada sistema puxado também se aplicam no tipo C;</li>
+
+</ul>
+
+</section>
+<section id="slide-org610f8a6">
+<h4 id="org610f8a6">Exemplo</h4>
+
+<div id="orgbea9feb" class="figure">
+<p><a href="img/cafe.png" width="100%" align="center"><img src="./img/cafe.png" alt="cafe.png" width="100%" align="center" /></a>
+</p>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org4902d65">
+<h2 id="org4902d65">Melhoria contínua</h2>
+
+<div id="orgd7510b7" class="figure">
+<p><a href="Partes/melhora-continua/img/img1.png" class="fragment (grow)" width="25%" align="center"><img src="./Partes/melhora-continua/img/img1.png" alt="img1.png" class="fragment (grow)" width="25%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 18: </span>Fonte: Adobe Stock.</p>
+</div>
+
+<blockquote >
+<p>
+Tornar-se uma organização de aprendizagem pela busca da padronização,
+da reflexão incansável e pela melhoria contínua (Kaizen).
+</p>
+</blockquote>
+</section>
+<section id="slide-org04ef810">
+<h3 id="org04ef810">Trabalho Padronizado x Padrão De Trabalho</h3>
+<div class="outline-text-3" id="text-org04ef810">
+</div>
+</section>
+<section id="slide-org3f46f9d">
+<h4 id="org3f46f9d"><code>Trabalho Padronizado</code></h4>
+<ul>
+<li class="fragment highlight-current-red">Depende da demanda</li>
+<li class="fragment highlight-current-red">Centrado na movimentação do trabalhador</li>
+<li class="fragment highlight-current-red">Tempo takt</li>
+<li class="fragment highlight-current-red">Sequência de Trabalho</li>
+<li class="fragment highlight-current-red">Estoque Padrão</li>
+
+</ul>
+</section>
+<section id="slide-org3b3537f">
+<h4 id="org3b3537f"><code>Padrão de Trabalho</code></h4>
+<ul>
+<li class="fragment highlight-current-blue">Independe da demanda</li>
+<li class="fragment highlight-current-blue">Especificações técnicas do processo</li>
+<li class="fragment highlight-current-blue">Base para elaboração do T.P</li>
+
+</ul>
+</section>
+<section id="slide-orgdc04948">
+<h3 id="orgdc04948">Trabalho Padronizado</h3>
+<ul>
+<li class="fragment highlight-current-red">Centrado no movimento e trabalho do operador</li>
+<li class="fragment highlight-current-red">Aplicado em operações e processos repetitivos</li>
+<li class="fragment highlight-current-red">Visa eliminar desperdícios</li>
+<li class="fragment highlight-current-red">Referência para o Kaizen</li>
+<li class="fragment highlight-current-red"><span class="underline">Modo mais seguro, fácil e eficaz atual.</span></li>
+
+</ul>
+
+
+<div id="orgf41e478" class="figure">
+<p><a href="img/DIGI-jumbo.jpg" width="38%" align="center"><img src="./img/DIGI-jumbo.jpg" alt="DIGI-jumbo.jpg" width="38%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 19: </span>Chaplin em assembly fordista.</p>
+</div>
+</section>
+<section id="slide-org2370fc9">
+<h3 id="org2370fc9">Diagrama Equemático - Padronização</h3>
+
+<div id="org8878648" class="figure">
+<p><a href="img/padr3.png" width="100%" align="center"><img src="./img/padr3.png" alt="padr3.png" width="100%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 20: </span>Fonte: Curso Green Belt EEL.</p>
+</div>
+</section>
+<section id="slide-org4de8371">
+<h3 id="org4de8371">Camisa de Força?</h3>
+<div class="outline-text-3" id="text-org4de8371">
+</div>
+</section>
+<section id="slide-org2c933ac">
+<h4 id="org2c933ac"><code>“Trabalho convencional”</code></h4>
+<ul>
+<li class="fragment highlight-current-red">Existe somente uma melhor maneira.</li>
+<li class="fragment highlight-current-red">Trabalhadores não envolvidos.</li>
+<li class="fragment highlight-current-red">Padrões estáticos.</li>
+
+</ul>
+
+</section>
+<section id="slide-orgc4d7112">
+<h4 id="orgc4d7112"><code>TPS - Toyota Production System</code></h4>
+<ul>
+<li class="fragment highlight-current-blue">Não há só uma melhor maneira</li>
+<li class="fragment highlight-current-blue">Trabalhadores devem planejar o trabalho</li>
+<li class="fragment highlight-current-blue">O objetivo do TP é fornecer bases para melhoria</li>
+
+</ul>
+</section>
+<section id="slide-org1db78fc">
+<h3 id="org1db78fc"><b>Síntese</b></h3>
+<blockquote >
+<p>
+“O trabalho padronizado dá suporte à criatividade humana, contanto que
+o líder de equipe tenha o entendimento correto.
+</p>
+
+<p>
+O trabalho padronizado é um processo, não uma prisão! Nossa meta é a
+perfeição, um processo sem nenhum desperdício.
+</p>
+
+<p>
+O trabalho padronizado fornece a base e o envolvimento dos membros de
+equipe, dá o ímpeto para melhorias ilimitadas e infinitas.”
+(Pascal Dennis)
+</p>
+</blockquote>
+</section>
+<section id="slide-org6ff07de">
+<h3 id="org6ff07de">Benefícios</h3>
+<ul>
+<li>Estabilidade de processos;</li>
+<li>Pontos de início e paradas claros para caad processo;</li>
+<li>Aprendizagem organizacional;</li>
+<li>A solução de auditorias e de problemas;</li>
+<li>Envolvimento do funcionário;</li>
+<li>Kaizen;</li>
+<li>Treinamento;</li>
+
+</ul>
+</section>
+<section id="slide-org6d6245a">
+<h3 id="org6d6245a">As três bases</h3>
+<div class="outline-text-3" id="text-org6d6245a">
+</div>
+</section>
+<section id="slide-org1ef3ae1">
+<h4 id="org1ef3ae1">O tempo <span class="underline">takt</span></h4>
+<ul>
+<li class="fragment highlight-current-red">O tempo takt nos fornece a frequência de demanda.</li>
+<li class="fragment highlight-current-red">O tempo takt é diferente do tempo de ciclo (tempo real), nossa meta é sincronizá-los ao máximo.</li>
+<li class="fragment highlight-current-red">O tempo takt nos permite entender nossa situação de produção com uma só olhada.</li>
+
+</ul>
+</section>
+<section id="slide-orgab9a571">
+<h4 id="orgab9a571">Sequência de trabalho</h4>
+<ul>
+<li>Sequência de operação ≠ Sequência do processo</li>
+
+</ul>
+
+
+<div id="org102f703" class="figure">
+<p><a href="img/freq.png" width="100%" align="center"><img src="./img/freq.png" alt="freq.png" width="100%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 21: </span>Fonte: Curso Green Belt EEL.</p>
+</div>
+</section>
+<section id="slide-org255c272">
+<h4 id="org255c272">Estoque em processo</h4>
+<ul>
+<li class="fragment highlight-current-red">É a quantia mínima de peças de trabalho incompletas necessárias para
+que o operador completo o processo sem ficar parado na frente de uma
+máquina.</li>
+<li class="fragment highlight-current-red">O trabalho não pode progredir sem certo números de peças a disposição.</li>
+
+</ul>
+
+
+<div id="org99a12b8" class="figure">
+<p><a href="img/estoque.png" width="100%" align="center"><img src="./img/estoque.png" alt="estoque.png" width="100%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 22: </span>Fonte: Bernardo J. Antunes.</p>
+</div>
+</section>
+<section id="slide-orgc9b01ab" data-background="./img/kaizen.png" data-background-opacity="0.5">
+<h3 id="orgc9b01ab"></h3>
+</section>
+<section id="slide-org31a28e9" data-background="./img/kaizen2.jpg" data-background-opacity="0.1">
+<h4 id="org31a28e9">Definição</h4>
+<p>
+<code>Kai</code> = <b>mudar</b>;
+</p>
+
+<p>
+<code>Zen</code> = <b>coisas boas, melhor</b>;
+</p>
+
+<ol>
+<li class="fragment highlight-current-red">Desenvolver as habilidades dos colaboradores.</li>
+<li class="fragment highlight-current-red">Solucionar as reais causas de problemas.</li>
+<li class="fragment highlight-current-red">Focar nas melhorias ditadas pela necessidade.</li>
+
+</ol>
+
+</section>
+<section id="slide-orgd3d23ba">
+<h4 id="orgd3d23ba">❌ 1º Eliminar desperdícios.</h4>
+<p>
+Tudo que consome recurso mas não cria valor.
+</p>
+
+<ul>
+<li class="fragment highlight-current-red">Produção em excesso</li>
+<li class="fragment highlight-current-red">Movimentação</li>
+<li class="fragment highlight-current-red">Espera</li>
+<li class="fragment highlight-current-red">Transporte</li>
+<li class="fragment highlight-current-red">Estoques</li>
+<li class="fragment highlight-current-red">Processamento desnecessário</li>
+<li class="fragment highlight-current-red">Correção e refugos</li>
+
+</ul>
+</section>
+<section id="slide-org6f87185">
+<h4 id="org6f87185">🗺 2º Melhorias ditadas pela necessidade</h4>
+<ul>
+<li>Fazer o <code>kaizen</code> onde é necessário.</li>
+
+</ul>
+</section>
+<section id="slide-org4b5b529">
+<h4 id="org4b5b529">☑ 3º Satisfação dos colaboradores</h4>
+<ul>
+<li class="fragment highlight-current-blue">O trabalhador é sensível ao resultado obtido.</li>
+<li class="fragment highlight-current-blue">Facilita as atividades e aumenta a auto estima do colaborador.</li>
+<li class="fragment highlight-current-blue">Rapidez de implementação gera maior satisfação.</li>
+
+</ul>
+</section>
+<section id="slide-org5e7ba17">
+<h4 id="org5e7ba17">🧠 4º Obtenção de lucro para a empresa</h4>
+<blockquote >
+<p>
+“Use a cabeça, não o dinheiro”
+</p>
+
+<p>
+Taiichi Ohno
+</p>
+</blockquote>
+
+<p>
+O lucro deve ser obtido pela eliminação de desperdícios, não pelo simples corte de custos.
+</p>
+</section>
+<section id="slide-org061f465">
+<h4 id="org061f465">🙋 5º Satisfação dos Clientes</h4>
+<ul>
+<li class="fragment highlight-current-green">O fracasso ou sucesso do <b>Kaizen</b> depende do julgamento do cliente.</li>
+<li class="fragment highlight-current-green">Sem a <span class="underline">“demanda”</span> de um cliente, não há necessidade da melhoria.</li>
+
+</ul>
+</section>
+<section id="slide-org6e957ba">
+<h4 id="org6e957ba">Kaizen &#x2013; Síntese</h4>
+<ul>
+<li>A prioridade dos 4Ms da Toyota</li>
+
+</ul>
+
+
+<div id="orge3798a0" class="figure">
+<p><a href="img/kaizen3.jpg" width="100%" align="center"><img src="./img/kaizen3.jpg" alt="kaizen3.jpg" width="100%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 23: </span>Fonte: Curso Green Belt EEL.</p>
+</div>
+
+<ul>
+<li>Segurança do trabalhador em primeiro lugar</li>
+
+</ul>
+</section>
+<section id="slide-orgd55d356" data-background="./img/kaizen4.jpg" data-background-opacity="0.5">
+<h3 id="orgd55d356"></h3>
+</section>
+<section id="slide-org1db5760">
+<h3 id="org1db5760">Workshop e Semana Kaizen</h3>
+
+<div id="orgd629401" class="figure">
+<p><a href="img/freq.png" width="100%" align="center"><img src="./img/worshop.jpg" alt="worshop.jpg" width="100%" align="center" /></a>
+</p>
+<p><span class="figure-number">Figure 24: </span>Fonte: Curso Green Belt EEL.</p>
+</div>
+</section>
+<section id="slide-orge2dc1c6" data-background="./img/kaizen5.jpg" data-background-opacity="0.1">
+<h3 id="orge2dc1c6"></h3>
+<p>
+<b>A perfeição é um ciclo permanente de criação valor e de eliminação de desperdícios. 
+Uma busca sem fim&#x2026;</b>
+</p>
+</section>
+<section id="slide-orgee18de9">
+<h3 id="orgee18de9">TPS</h3>
+<iframe width="1000" height="600" src="https://www.youtube.com/embed/61XeVq-1xbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</section>
+</section>
+<section>
+<section id="slide-org243a58d">
+<h2 id="org243a58d">Breaking Quizz!</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealHighlight]
+});
+
+</script>
+<script src="./js/caption.js"></script></body>
+</html>
